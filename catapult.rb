@@ -5,12 +5,12 @@
 class Catapult < Formula
   desc "A console application for file management and synchronization with GitHub using device flow authentication"
   homepage "https://github.com/itcaat/catapult"
-  version "0.0.4"
+  version "0.0.5"
   license "MIT"
 
   on_macos do
-    url "https://github.com/itcaat/catapult/releases/download/v0.0.4/catapult_0.0.4_darwin_all.tar.gz"
-    sha256 "7e76fa1a937c6ba9b17b1fdaf93e86a5e9a863ccf8149fde3ee40205669b63cf"
+    url "https://github.com/itcaat/catapult/releases/download/v0.0.5/catapult_0.0.5_darwin_all.tar.gz"
+    sha256 "f2a5dff56304c7f0c1e1efbd8b88d2f687122b671379e349d4b46355725493db"
 
     def install
       bin.install "catapult"
@@ -19,15 +19,15 @@ class Catapult < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/itcaat/catapult/releases/download/v0.0.4/catapult_0.0.4_linux_amd64.tar.gz"
-      sha256 "face3445d4734c2dcadd9925127d26fe14f265f6b53b34a354ac342192e5c59d"
+      url "https://github.com/itcaat/catapult/releases/download/v0.0.5/catapult_0.0.5_linux_amd64.tar.gz"
+      sha256 "a6433074f51ee76e167514a9617c22634c231cc522ba2313e8cc9707ec1ec51b"
       def install
         bin.install "catapult"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/itcaat/catapult/releases/download/v0.0.4/catapult_0.0.4_linux_arm64.tar.gz"
-      sha256 "f53f1a27c2e02384ac4c8546cf53dd24398e9a68dcb2f6a2bea8eed0622402f7"
+      url "https://github.com/itcaat/catapult/releases/download/v0.0.5/catapult_0.0.5_linux_arm64.tar.gz"
+      sha256 "1e29cad5ade08873170faa06b808b0ad50f116ce22ccd1b5c1c6f8bfdfeb2f55"
       def install
         bin.install "catapult"
       end
