@@ -5,12 +5,12 @@
 class CliStash < Formula
   desc "A terminal UI application for saving and recalling shell commands"
   homepage "https://github.com/itcaat/cli-stash"
-  version "0.0.3"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
-    url "https://github.com/itcaat/cli-stash/releases/download/v0.0.3/cli-stash_0.0.3_darwin_all.tar.gz"
-    sha256 "d2874e39cdb5a31c99003360ad5fe142c91593acd7f52fc4db260cd012eb46e7"
+    url "https://github.com/itcaat/cli-stash/releases/download/v0.1.1/cli-stash_0.1.1_darwin_all.tar.gz"
+    sha256 "68129252528a4ab5e7bacd2e4081f1dbbb0c0c7e1c450e7223e68adec436174f"
 
     def install
       bin.install "cli-stash"
@@ -19,15 +19,15 @@ class CliStash < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/itcaat/cli-stash/releases/download/v0.0.3/cli-stash_0.0.3_linux_amd64.tar.gz"
-      sha256 "d7d125de3ef8013380be4cadbaca0d094b77d4670fe3a04f4feaeb196e063a44"
+      url "https://github.com/itcaat/cli-stash/releases/download/v0.1.1/cli-stash_0.1.1_linux_amd64.tar.gz"
+      sha256 "b12ed4f7c542948b8dcd0d9c02e5aff1989fcb367f88ef113794618bc62bccc5"
       def install
         bin.install "cli-stash"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/itcaat/cli-stash/releases/download/v0.0.3/cli-stash_0.0.3_linux_arm64.tar.gz"
-      sha256 "2656a372cf0a4921e03e54017f383a885010aa378b33bba6c2783521e6538385"
+      url "https://github.com/itcaat/cli-stash/releases/download/v0.1.1/cli-stash_0.1.1_linux_arm64.tar.gz"
+      sha256 "39633181647a3ff0535326760f699c2cb7fd05fbf301534e149d582ed6dbeffd"
       def install
         bin.install "cli-stash"
       end
